@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEADFDBF-DA9D-40CE-A298-A75F48AD4FA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PT</RootNamespace>
+    <AssemblyName>PT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\118709\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adicionar_carro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar_carro.Designer.cs">
+      <DependentUpon>Adicionar_carro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alugar_Anular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alugar_Anular.Designer.cs">
+      <DependentUpon>Alugar_Anular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alugar_Procurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alugar_Procurar.Designer.cs">
+      <DependentUpon>Alugar_Procurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alugar_Registar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alugar_Registar.Designer.cs">
+      <DependentUpon>Alugar_Registar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL.cs" />
+    <Compile Include="DAL.cs" />
+    <Compile Include="Clientes_Registar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_Registar.Designer.cs">
+      <DependentUpon>Clientes_Registar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_Editar.Designer.cs">
+      <DependentUpon>Clientes_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes_Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_Visualizar.Designer.cs">
+      <DependentUpon>Clientes_Visualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudar_Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mudar_Pass.Designer.cs">
+      <DependentUpon>Mudar_Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globais.cs" />
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyRoutedEventArgs.cs" />
+    <Compile Include="Veiculo_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo_Editar.Designer.cs">
+      <DependentUpon>Veiculo_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo_Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo_Visualizar.Designer.cs">
+      <DependentUpon>Veiculo_Visualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios_Registar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios_Registar.Designer.cs">
+      <DependentUpon>Funcionarios_Registar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios_Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios_Editar.Designer.cs">
+      <DependentUpon>Funcionarios_Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Funcionarios_Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios_Visualizar.Designer.cs">
+      <DependentUpon>Funcionarios_Visualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veiculo_Registar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veiculo_Registar.Designer.cs">
+      <DependentUpon>Veiculo_Registar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas_Anular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas_Anular.Designer.cs">
+      <DependentUpon>Vendas_Anular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas_Procurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas_Procurar.Designer.cs">
+      <DependentUpon>Vendas_Procurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas_Registar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas_Registar.Designer.cs">
+      <DependentUpon>Vendas_Registar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adicionar_carro.resx">
+      <DependentUpon>Adicionar_carro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alugar_Anular.resx">
+      <DependentUpon>Alugar_Anular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alugar_Procurar.resx">
+      <DependentUpon>Alugar_Procurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alugar_Registar.resx">
+      <DependentUpon>Alugar_Registar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes_Registar.resx">
+      <DependentUpon>Clientes_Registar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes_Editar.resx">
+      <DependentUpon>Clientes_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes_Visualizar.resx">
+      <DependentUpon>Clientes_Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudar_Pass.resx">
+      <DependentUpon>Mudar_Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios_Registar.resx">
+      <DependentUpon>Funcionarios_Registar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios_Editar.resx">
+      <DependentUpon>Funcionarios_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Funcionarios_Visualizar.resx">
+      <DependentUpon>Funcionarios_Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo_Editar.resx">
+      <DependentUpon>Veiculo_Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo_Registar.resx">
+      <DependentUpon>Veiculo_Registar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veiculo_Visualizar.resx">
+      <DependentUpon>Veiculo_Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas_Anular.resx">
+      <DependentUpon>Vendas_Anular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas_Procurar.resx">
+      <DependentUpon>Vendas_Procurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas_Registar.resx">
+      <DependentUpon>Vendas_Registar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
