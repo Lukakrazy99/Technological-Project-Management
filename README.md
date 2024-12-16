@@ -1,6 +1,6 @@
 # Technological-Project-Management
 
-Some examples
+Sceenshots
 
 ![Imagem1](https://github.com/user-attachments/assets/a2e2533d-27a0-4394-bd5e-9dda180ad71b)
 
